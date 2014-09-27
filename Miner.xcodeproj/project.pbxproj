@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F32DA82219CCFE7D00831997 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA82119CCFE7D00831997 /* Client.swift */; };
+		F32DA82419CD421300831997 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA82319CD421300831997 /* ResponseParser.swift */; };
+		F32DA84E19CDE91C00831997 /* SubscribeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA84D19CDE91C00831997 /* SubscribeResult.swift */; };
+		F32DA85819CDE94300831997 /* RPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = F32DA85319CDE94300831997 /* RPCError.m */; };
+		F32DA85919CDE94300831997 /* RPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F32DA85519CDE94300831997 /* RPCRequest.m */; };
+		F32DA85A19CDE94300831997 /* RPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F32DA85719CDE94300831997 /* RPCResponse.m */; };
+		F32DA85C19CE361D00831997 /* JobParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA85B19CE361D00831997 /* JobParameters.swift */; };
+		F32DA85E19CE43CE00831997 /* StratumClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA85D19CE43CE00831997 /* StratumClientProtocol.swift */; };
+		F32DA86119CEA4D700831997 /* PoolMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DA86019CEA4D700831997 /* PoolMiner.swift */; };
 		F33A3AF319C65BD5000B67D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3AF219C65BD5000B67D1 /* AppDelegate.swift */; };
 		F33A3AF519C65BD5000B67D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3AF419C65BD5000B67D1 /* ViewController.swift */; };
 		F33A3AF819C65BD5000B67D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33A3AF619C65BD5000B67D1 /* Main.storyboard */; };
 		F33A3AFA19C65BD5000B67D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33A3AF919C65BD5000B67D1 /* Images.xcassets */; };
 		F33A3AFD19C65BD5000B67D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33A3AFB19C65BD5000B67D1 /* LaunchScreen.xib */; };
 		F33A3B0919C65BD5000B67D1 /* MinerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B0819C65BD5000B67D1 /* MinerTests.swift */; };
+		F33A3B1319C65CF1000B67D1 /* BlockHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B1219C65CF1000B67D1 /* BlockHeader.swift */; };
+		F33A3B1519C65FA2000B67D1 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B1419C65FA2000B67D1 /* Block.swift */; };
+		F33A3B1B19C68C1C000B67D1 /* VariableLengthInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B1A19C68C1C000B67D1 /* VariableLengthInteger.swift */; };
+		F33A3B1D19C7A0F4000B67D1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B1C19C7A0F4000B67D1 /* Transaction.swift */; };
+		F33A3B1F19C7A16E000B67D1 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B1E19C7A16E000B67D1 /* Input.swift */; };
+		F33A3B2119C7A257000B67D1 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B2019C7A257000B67D1 /* Output.swift */; };
+		F33A3B2819C7ABD0000B67D1 /* Cryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = F33A3B2719C7ABD0000B67D1 /* Cryptography.m */; };
+		F35A8A5219C8E57000CDCB10 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A8A5119C8E57000CDCB10 /* NSData+HexString.m */; };
+		F35A8A5419C917D300CDCB10 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A8A5319C917D300CDCB10 /* DataBlock.swift */; };
+		F35A8A5619C9182500CDCB10 /* DataObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A8A5519C9182500CDCB10 /* DataObjectProtocol.swift */; };
+		F35A8A5819C91A9600CDCB10 /* DataBlockSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A8A5719C91A9600CDCB10 /* DataBlockSegment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F32DA82119CCFE7D00831997 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Miner/Stratum/Client.swift; sourceTree = "<group>"; };
+		F32DA82319CD421300831997 /* ResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseParser.swift; path = Miner/Stratum/ResponseParser.swift; sourceTree = "<group>"; };
+		F32DA84D19CDE91C00831997 /* SubscribeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeResult.swift; path = Miner/Stratum/SubscribeResult.swift; sourceTree = "<group>"; };
+		F32DA85219CDE94300831997 /* RPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPCError.h; path = "Miner/Stratum/JSON-RPC/RPCError.h"; sourceTree = "<group>"; };
+		F32DA85319CDE94300831997 /* RPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPCError.m; path = "Miner/Stratum/JSON-RPC/RPCError.m"; sourceTree = "<group>"; };
+		F32DA85419CDE94300831997 /* RPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPCRequest.h; path = "Miner/Stratum/JSON-RPC/RPCRequest.h"; sourceTree = "<group>"; };
+		F32DA85519CDE94300831997 /* RPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPCRequest.m; path = "Miner/Stratum/JSON-RPC/RPCRequest.m"; sourceTree = "<group>"; };
+		F32DA85619CDE94300831997 /* RPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPCResponse.h; path = "Miner/Stratum/JSON-RPC/RPCResponse.h"; sourceTree = "<group>"; };
+		F32DA85719CDE94300831997 /* RPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPCResponse.m; path = "Miner/Stratum/JSON-RPC/RPCResponse.m"; sourceTree = "<group>"; };
+		F32DA85B19CE361D00831997 /* JobParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobParameters.swift; path = Miner/Stratum/JobParameters.swift; sourceTree = "<group>"; };
+		F32DA85D19CE43CE00831997 /* StratumClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StratumClientProtocol.swift; path = Miner/Stratum/StratumClientProtocol.swift; sourceTree = "<group>"; };
+		F32DA86019CEA4D700831997 /* PoolMiner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PoolMiner.swift; path = "Miner/Pool Miner/PoolMiner.swift"; sourceTree = "<group>"; };
 		F33A3AED19C65BD5000B67D1 /* Miner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33A3AF119C65BD5000B67D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F33A3AF219C65BD5000B67D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F33A3AF219C65BD5000B67D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Miner/AppDelegate.swift; sourceTree = "<group>"; };
 		F33A3AF419C65BD5000B67D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F33A3AF719C65BD5000B67D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F33A3AF919C65BD5000B67D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -36,6 +68,20 @@
 		F33A3B0219C65BD5000B67D1 /* MinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33A3B0719C65BD5000B67D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33A3B0819C65BD5000B67D1 /* MinerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinerTests.swift; sourceTree = "<group>"; };
+		F33A3B1219C65CF1000B67D1 /* BlockHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlockHeader.swift; path = bitcoin/BlockHeader.swift; sourceTree = "<group>"; };
+		F33A3B1419C65FA2000B67D1 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Block.swift; path = bitcoin/Block.swift; sourceTree = "<group>"; };
+		F33A3B1A19C68C1C000B67D1 /* VariableLengthInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VariableLengthInteger.swift; path = Bitcoin/VariableLengthInteger.swift; sourceTree = "<group>"; };
+		F33A3B1C19C7A0F4000B67D1 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Bitcoin/Transaction.swift; sourceTree = "<group>"; };
+		F33A3B1E19C7A16E000B67D1 /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Input.swift; path = Bitcoin/Input.swift; sourceTree = "<group>"; };
+		F33A3B2019C7A257000B67D1 /* Output.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Output.swift; path = Bitcoin/Output.swift; sourceTree = "<group>"; };
+		F33A3B2519C7AB97000B67D1 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F33A3B2619C7ABD0000B67D1 /* Cryptography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cryptography.h; path = Miner/Cryptography.h; sourceTree = "<group>"; };
+		F33A3B2719C7ABD0000B67D1 /* Cryptography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cryptography.m; path = Miner/Cryptography.m; sourceTree = "<group>"; };
+		F35A8A5019C8E57000CDCB10 /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+HexString.h"; path = "Miner/NSData+HexString.h"; sourceTree = "<group>"; };
+		F35A8A5119C8E57000CDCB10 /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+HexString.m"; path = "Miner/NSData+HexString.m"; sourceTree = "<group>"; };
+		F35A8A5319C917D300CDCB10 /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Miner/DataBlock.swift; sourceTree = "<group>"; };
+		F35A8A5519C9182500CDCB10 /* DataObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataObjectProtocol.swift; path = Miner/DataObjectProtocol.swift; sourceTree = "<group>"; };
+		F35A8A5719C91A9600CDCB10 /* DataBlockSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlockSegment.swift; path = Miner/DataBlockSegment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30FDB2D19C932B9001763FC /* Data Block */ = {
+			isa = PBXGroup;
+			children = (
+				F35A8A5319C917D300CDCB10 /* DataBlock.swift */,
+				F35A8A5519C9182500CDCB10 /* DataObjectProtocol.swift */,
+				F35A8A5719C91A9600CDCB10 /* DataBlockSegment.swift */,
+			);
+			name = "Data Block";
+			sourceTree = "<group>";
+		};
+		F30FDB2E19C932E8001763FC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F35A8A5019C8E57000CDCB10 /* NSData+HexString.h */,
+				F35A8A5119C8E57000CDCB10 /* NSData+HexString.m */,
+				F33A3B2619C7ABD0000B67D1 /* Cryptography.h */,
+				F33A3B2719C7ABD0000B67D1 /* Cryptography.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F32DA82519CD423500831997 /* Stratum */ = {
+			isa = PBXGroup;
+			children = (
+				F32DA85119CDE93900831997 /* JSON-RPC */,
+				F32DA82119CCFE7D00831997 /* Client.swift */,
+				F32DA82319CD421300831997 /* ResponseParser.swift */,
+				F32DA84D19CDE91C00831997 /* SubscribeResult.swift */,
+				F32DA85B19CE361D00831997 /* JobParameters.swift */,
+				F32DA85D19CE43CE00831997 /* StratumClientProtocol.swift */,
+			);
+			name = Stratum;
+			sourceTree = "<group>";
+		};
+		F32DA85119CDE93900831997 /* JSON-RPC */ = {
+			isa = PBXGroup;
+			children = (
+				F32DA85219CDE94300831997 /* RPCError.h */,
+				F32DA85319CDE94300831997 /* RPCError.m */,
+				F32DA85419CDE94300831997 /* RPCRequest.h */,
+				F32DA85519CDE94300831997 /* RPCRequest.m */,
+				F32DA85619CDE94300831997 /* RPCResponse.h */,
+				F32DA85719CDE94300831997 /* RPCResponse.m */,
+			);
+			name = "JSON-RPC";
+			sourceTree = "<group>";
+		};
+		F32DA85F19CEA4BB00831997 /* Pool Miner */ = {
+			isa = PBXGroup;
+			children = (
+				F32DA86019CEA4D700831997 /* PoolMiner.swift */,
+			);
+			name = "Pool Miner";
+			sourceTree = "<group>";
+		};
 		F33A3AE419C65BD5000B67D1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +178,11 @@
 		F33A3AEF19C65BD5000B67D1 /* Miner */ = {
 			isa = PBXGroup;
 			children = (
-				F33A3AF219C65BD5000B67D1 /* AppDelegate.swift */,
-				F33A3AF419C65BD5000B67D1 /* ViewController.swift */,
 				F33A3AF619C65BD5000B67D1 /* Main.storyboard */,
-				F33A3AF919C65BD5000B67D1 /* Images.xcassets */,
-				F33A3AFB19C65BD5000B67D1 /* LaunchScreen.xib */,
+				F33A3B2519C7AB97000B67D1 /* Bridging-Header.h */,
+				F33A3B1719C67623000B67D1 /* Model */,
+				F33A3B1919C67655000B67D1 /* View */,
+				F33A3B1819C67646000B67D1 /* Controller */,
 				F33A3AF019C65BD5000B67D1 /* Supporting Files */,
 			);
 			path = Miner;
@@ -90,6 +191,8 @@
 		F33A3AF019C65BD5000B67D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F33A3AFB19C65BD5000B67D1 /* LaunchScreen.xib */,
+				F33A3AF919C65BD5000B67D1 /* Images.xcassets */,
 				F33A3AF119C65BD5000B67D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +213,49 @@
 				F33A3B0719C65BD5000B67D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F33A3B1619C6760D000B67D1 /* Bitcoin Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				F33A3B1219C65CF1000B67D1 /* BlockHeader.swift */,
+				F33A3B1419C65FA2000B67D1 /* Block.swift */,
+				F33A3B1A19C68C1C000B67D1 /* VariableLengthInteger.swift */,
+				F33A3B1C19C7A0F4000B67D1 /* Transaction.swift */,
+				F33A3B1E19C7A16E000B67D1 /* Input.swift */,
+				F33A3B2019C7A257000B67D1 /* Output.swift */,
+			);
+			name = "Bitcoin Data Structures";
+			path = Miner;
+			sourceTree = "<group>";
+		};
+		F33A3B1719C67623000B67D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F33A3AF219C65BD5000B67D1 /* AppDelegate.swift */,
+				F33A3B1619C6760D000B67D1 /* Bitcoin Data Structures */,
+				F32DA85F19CEA4BB00831997 /* Pool Miner */,
+				F30FDB2D19C932B9001763FC /* Data Block */,
+				F32DA82519CD423500831997 /* Stratum */,
+				F30FDB2E19C932E8001763FC /* Other */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F33A3B1819C67646000B67D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F33A3AF419C65BD5000B67D1 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F33A3B1919C67655000B67D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +358,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33A3B2119C7A257000B67D1 /* Output.swift in Sources */,
+				F33A3B1F19C7A16E000B67D1 /* Input.swift in Sources */,
 				F33A3AF519C65BD5000B67D1 /* ViewController.swift in Sources */,
+				F35A8A5219C8E57000CDCB10 /* NSData+HexString.m in Sources */,
+				F35A8A5619C9182500CDCB10 /* DataObjectProtocol.swift in Sources */,
+				F32DA85C19CE361D00831997 /* JobParameters.swift in Sources */,
+				F32DA82419CD421300831997 /* ResponseParser.swift in Sources */,
+				F32DA84E19CDE91C00831997 /* SubscribeResult.swift in Sources */,
+				F32DA85E19CE43CE00831997 /* StratumClientProtocol.swift in Sources */,
+				F35A8A5819C91A9600CDCB10 /* DataBlockSegment.swift in Sources */,
+				F33A3B1B19C68C1C000B67D1 /* VariableLengthInteger.swift in Sources */,
+				F35A8A5419C917D300CDCB10 /* DataBlock.swift in Sources */,
+				F32DA86119CEA4D700831997 /* PoolMiner.swift in Sources */,
+				F33A3B1D19C7A0F4000B67D1 /* Transaction.swift in Sources */,
+				F32DA85A19CDE94300831997 /* RPCResponse.m in Sources */,
+				F33A3B2819C7ABD0000B67D1 /* Cryptography.m in Sources */,
+				F33A3B1519C65FA2000B67D1 /* Block.swift in Sources */,
+				F32DA85919CDE94300831997 /* RPCRequest.m in Sources */,
+				F32DA85819CDE94300831997 /* RPCError.m in Sources */,
+				F32DA82219CCFE7D00831997 /* Client.swift in Sources */,
 				F33A3AF319C65BD5000B67D1 /* AppDelegate.swift in Sources */,
+				F33A3B1319C65CF1000B67D1 /* BlockHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +506,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Miner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Miner/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -350,7 +522,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Miner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Miner/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +584,7 @@
 				F33A3B0E19C65BD5000B67D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F33A3B0F19C65BD5000B67D1 /* Build configuration list for PBXNativeTarget "MinerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +593,7 @@
 				F33A3B1119C65BD5000B67D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
